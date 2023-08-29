@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraHandler : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera cinemachineVirutalCamera;
-
+    [SerializeField] private float cameraMoveSpeed;
     private float orthographicSize;
     private float targetOrthographicSize;
     private void Start()
@@ -26,9 +26,9 @@ public class CameraHandler : MonoBehaviour
         float y = Input.GetAxisRaw("Vertical");
 
         Vector3 moveDir = new Vector3(x, y).normalized;
-        float moveSpeed = 30f;
+        //float moveSpeed = 30f;
 
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+        transform.position += moveDir * cameraMoveSpeed * Time.deltaTime;
     }
 
     private void HandleZoom()
