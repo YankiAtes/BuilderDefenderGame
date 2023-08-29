@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: -150325047824227196}
   - component: {fileID: -5661221399095188845}
   - component: {fileID: 3506823037634435576}
+  - component: {fileID: -2016715578082734317}
+  - component: {fileID: 6677765996553456832}
   m_Layer: 0
   m_Name: StoneHarvester
   m_TagString: Untagged
@@ -34,6 +36,7 @@ Transform:
   m_Children:
   - {fileID: 3621640735755465819}
   - {fileID: 8255027415089108609}
+  - {fileID: 8177527665818595816}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-150325047824227196
@@ -106,6 +109,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.9987593, y: 4.111412}
   m_EdgeRadius: 0
+--- !u!114 &-2016715578082734317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524823503741575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d021eac362e3b044a19dd4627de8c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthAmountMax: 100
+--- !u!114 &6677765996553456832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524823503741575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cb6714e09a1a24299ab303b2e5532f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4313667841990674378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,6 +199,72 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5283432365150835019, guid: 7e252a183ebdc06459013d1db0daea07, type: 3}
   m_PrefabInstance: {fileID: 4313667841990674378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6048717577005837972
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2616653878976948186}
+    m_Modifications:
+    - target: {fileID: 121920145938025747, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_Name
+      value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523389781399261991, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+      propertyPath: healthSystem
+      value: 
+      objectReference: {fileID: -2016715578082734317}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+--- !u!4 &8177527665818595816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2489706106651402108, guid: 33f4259f2aa345646af2707b8fca05e3, type: 3}
+  m_PrefabInstance: {fileID: 6048717577005837972}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8811594231609191872
 PrefabInstance:

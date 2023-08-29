@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Stone
   m_EditorClassIdentifier: 
   nameString: Stone
+  nameShort: S
   sprite: {fileID: 21300000, guid: f17490abf18ada843962be8af36811aa, type: 3}
+  colorHex: 7B7B7B
