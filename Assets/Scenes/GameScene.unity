@@ -19334,7 +19334,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5191e7d6584bd2b4083844410e148eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingResourceAmountList: []
+  startingResourceAmountList:
+  - resourceType: {fileID: 11400000, guid: c8ce405ce1e2b17468663f974e3e7e8f, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: 753a32ec2c4340e429c11a2a33a672f3, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: dc9a0231a3fa79e43a0c39cc2da6a29f, type: 2}
+    amount: 100
 --- !u!4 &1181261712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3103744837099274459, guid: 7e3377163b9894447b8bbfc1f078eaed, type: 3}

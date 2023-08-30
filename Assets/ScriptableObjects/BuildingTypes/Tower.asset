@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameString: Tower
   prefab: {fileID: 2616653878976948186, guid: de1a709ea62479a4bb1020179f4c967c, type: 3}
+  hasResourceGeneratorData: 0
   resourceGeneratorData:
     timerMax: 0
     resourceType: {fileID: 0}
@@ -27,3 +28,4 @@ MonoBehaviour:
   - resourceType: {fileID: 11400000, guid: 753a32ec2c4340e429c11a2a33a672f3, type: 2}
     amount: 30
   healthAmountMax: 70
+  constructionTimerMax: 5
