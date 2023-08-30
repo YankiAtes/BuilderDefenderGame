@@ -30,8 +30,15 @@ public class BuildingManager : MonoBehaviour
     }
     private void Start()
     {
-        mainCamera = Camera.main;       
+        mainCamera = Camera.main;
+        hqBuilding.GetComponent<HealthSystem>().onDied += HQ_onDied;
     }
+
+    private void HQ_onDied(object sender, EventArgs e)
+    {
+        GameOverUI.Instance.Show();
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())

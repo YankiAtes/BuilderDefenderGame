@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class EnemyWaveManager : MonoBehaviour
 {
-
+    
+    public static EnemyWaveManager Instance { get; private set; }
     public event EventHandler OnWaveNumberChanged;
     private enum State
     {
@@ -23,6 +24,11 @@ public class EnemyWaveManager : MonoBehaviour
     private float nextEnemySpawnTimer;
     private int remainingEnemySpawnAmount;
     private Vector3 spawnPosition;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         spawnPosition = spawnPositionTransformList[UnityEngine.Random.Range(0, spawnPositionTransformList.Count)].position;
