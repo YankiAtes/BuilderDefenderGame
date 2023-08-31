@@ -27,12 +27,19 @@ public class Enemy : MonoBehaviour
         }
         lookForTargetTimer = Random.Range(0f,lookForTargetTimerMax);
 
+        healthSystem.onDamaged += HealthSystem_onDamaged;
         healthSystem = GetComponent<HealthSystem>();
         healthSystem.onDied += HealthSystem_onDied;
     }
 
+    private void HealthSystem_onDamaged(object sender, System.EventArgs e)
+    {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.EnemyHit);
+    }
+
     private void HealthSystem_onDied(object sender, System.EventArgs e)
     {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.EnemyDie);
         Destroy(gameObject);
     }
 
